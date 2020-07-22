@@ -15,7 +15,7 @@
             </ul>
     </header>
     <div>
-    <h1 style="background: red">hello exo 2</h1>
+    <h1 style="background: red">hello exo 4</h1>
 
    <h1 id="one">textContent alors?</h1>  
    <!-- utiliser la la propriete textContent sur one
@@ -36,18 +36,31 @@
         
     <h1 id="three">innerText alors?</h1> 
     <!--meme exercice que au-dessus -->
-    <h1>+= innerHTML alors?</h1> 
+    <h1 id="four">+= innerHTML alors?</h1> 
     <!-- pareil mais observer la difference de comportement 
         avec une sorte d'acrementation += 
         exemple (element.innerHTML += "string";) 
         Observation....-->
-   <h1>+= innerText alors?</h1>  
+   <h1 id="five">+= innerText alors?</h1>  
    <!-- pareil avec innerText 
     Observation...
 -->
     </div>
 <script>
+    var un = document.getElementById("one")
+    un.textContent = "salut j'ai changé le texte :D"
 
+    var deux = document.getElementById("two")
+    deux.innerHTML = "Re j'ai changé ici aussi"
+
+    var trois = document.getElementById("three")
+    trois.innerHTML = "y'a plus de saucisse phillippe"
+
+    var quatre = document.getElementById("four")
+    quatre.innerHTML += " <h1>bonjoir</h1>"
+
+    var cinq = document.getElementById("five")
+    cinq.innerText += " x9 yas"
 
 </script>
 <!-- :

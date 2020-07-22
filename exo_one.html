@@ -17,7 +17,7 @@
         </header>
         <main>
             <section>
-                <div>section 1 enfant 1 (class)</div>
+                <div class="node1">section 1 enfant 1 (class)</div>
                 <!-- selectionne le node du dessus grace à une class -->
 <!-- 
                                                                                 exercice astuce:
@@ -36,12 +36,12 @@
                                                                                 doc sur le queryselectorall https://www.w3schools.com/jsref/met_document_queryselectorall.asp
 -->           
             <section>
-                <div>section 2 enfant 1 (id)</div>
+                <div id="divS2">section 2 enfant 1 (id)</div>
                 <!-- selectionne le node du dessus grace à une id -->
-                <div>section 2 enfant 2 (index de tableau [1])</div>
+                <div id="div2S2">section 2 enfant 2 (index de tableau [1])</div>
                 <!-- selectionne le node du dessus grace à un querry selector -->
             </section>
-            <section>
+            <section id="sec3">
                 <div>section 3 enfant 1 (index de tableau [0])</div>
                 <div>section 3 enfant 2 (index de tableau [1])</div>
                 <!-- selectionne les deux nodes enfant de cette section 
@@ -68,6 +68,13 @@
 
    
 <script>
+    var a = document.getElementsByClassName("node1")
+    var b = document.getElementsByTagName("div")[1]
+    var c = document.getElementById("divS2")
+    var d = document.querySelector("#div2S2")
+    var e = document.querySelector("#sec3")
+    var f = document.querySelectorAll("section")[3]
+    var g = document.getElementsByTagName("section")[3]
 
 
 
