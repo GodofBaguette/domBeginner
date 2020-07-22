@@ -16,7 +16,7 @@
             </ul>
     </header>
     <div>
-    <h1 id="one" style="background: red">event intrusif</h1>
+    <h1 id="one" style="background: red" onclick="document.getElementById('one').style.backgroundColor = 'blue'">event intrusif</h1>
     <!-- 
         ajouter un evenement onclick sur la balise h1 one 
         (en intrusif(directement en attribu dans la balise html)) 
@@ -28,7 +28,7 @@
 -->
 
     <h1 id="two">event non intrusif à écoute sur le button</h1>
-    <button>clic!!!!</button>
+    <button id="myButton">clic!!!!</button>
     <!-- pareil un event qui attribue un background de h1 id two 
         mais non instrusif à ecrit dans la balise script
      -->
@@ -39,6 +39,17 @@
 
     </div>
 <script>
+    var yo = document.getElementById("two")
+    var ya = document.getElementById("myButton")
+
+        ya.addEventListener('click', function(event){
+                yo.style.backgroundColor = "grey"
+                console.log(event)
+                console.dir(event)
+        })
+
+        
+        
 
 </script>
 
