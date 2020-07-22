@@ -15,7 +15,7 @@
             <li>utilisé cette data dynamiquement</li>
         </ul>
     </header>
-    <h1>l'attribut style de body = </h1>
+    <h1 id="bg">l'attribut style de body = </h1>
 <!-- exercice:
 -vous devez ecrire du JS dans le document actuel 
 -allez chercher attribut style 
@@ -31,7 +31,12 @@ https://www.w3schools.com/jsref/prop_doc_body.asp -->
 --astuce passer par l'interface style de l'element cibler' https://www.w3schools.com/jsref/dom_obj_style.asp -->
 <script>
   
-    
+  let test = document.body.style.backgroundColor
+  let po = document.getElementById("bg")
+  po.innerHTML += test; // += permet de l'ajouter et pas le remplacer
+  console.log(test);
+
+
 </script>
     
 </body>

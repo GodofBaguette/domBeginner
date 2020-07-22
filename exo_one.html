@@ -16,11 +16,11 @@
     
         </header>
         <main>
-            <section>
+            <section id="section1">
                 <div>section 1 enfant 1 (index de tableau [0])</div>
                 <div>section 1 enfant 2 (index de tableau [1])</div>
             </section>
-            <section>
+            <section class="section2">
                 <div>section 2 enfant 1 (index de tableau [0])</div>
                 <div>section 2 enfant 2 (index de tableau [1])</div>
             </section>
@@ -35,6 +35,16 @@
 
    
 <script>
+
+var s1 = document.getElementById('section1')
+var s2 = document.getElementsByClassName('section2')
+var s3 = document.getElementsByTagName('section')
+var s4 = document.querySelectorAll('section')
+var s5 = document.querySelector('section')
+
+
+
+
 // exercice:
 // -ecrire le js Ici
 // -creer 
@@ -42,7 +52,7 @@
 // -Astuce mettre l element du DOM attraper dans uns structure de donnees generalement une variable
 // -par class https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp par tag https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp 
 // par id https://www.w3schools.com/jsref/met_document_getelementbyid.aspet par query selector https://www.w3schools.com/jsref/met_document_queryselector.asp 
-// -premierement charcher un node particulier 
+// -premierement chercher un node particulier 
 // resulat escompter le console log de tout ca et console dir egalement
 // -chercher une collection de plusieurs Node methode traditionnelle et queryselectorall https://www.w3schools.com/jsref/met_document_queryselectorall.asp
 // resulat escompter le console log de tout ca et console dir egalement

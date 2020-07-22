@@ -16,8 +16,9 @@
             </ul>
 
     </header>
-    <div>
-    <h1 style="background: red">hello exo 2</h1>
+    <div id="parent">
+        <h1 style="background: red" id="h1bg">hello exo 2</h1>
+
     </div>
 <!-- exercice:
 -vous devez ecrire du JS dans le document actuel 
@@ -34,8 +35,23 @@ et avec l interface style https://www.w3schools.com/jsref/dom_obj_style.asp -->
 
 
 <script>
+    var bg = document.getElementById('h1bg')
 
-    
+    bg.style.backgroundColor = "gray"
+    // ou bg.setAttributes("style","background-color: gray;")
+
+    const newElt = document.createElement("h1")
+    let elt = document.getElementById("parent")
+
+    newElt.innerHTML = "Salut à tous"
+
+    newElt.setAttribute("style","background-color: blue;")
+
+    elt.appendChild(newElt)
+
+    //creer un enfant en ajouter text/background
+
+ 
     
 
 </script>
